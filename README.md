@@ -1,72 +1,39 @@
 # Hamees Working Theme Demo
 
-A custom WordPress theme built to demonstrate practical WordPress theme development skills including template hierarchy, theme setup, frontend rendering, responsive design, navigation management, and WordPress best practices.
+A complete, lightweight WordPress theme built for a client-facing technical walkthrough. The installable theme is in [`hamees-working-theme-demo`](./hamees-working-theme-demo/).
 
-## Features
+## What this demonstrates
 
-* Custom WordPress theme structure
-* Responsive desktop, tablet, and mobile layouts
-* Dynamic homepage template
-* WordPress menu support
-* Featured image support
-* Custom logo support
-* HTML5 markup support
-* Responsive embeds
-* Proper asset enqueueing
-* Latest posts section
-* SEO-friendly semantic markup
-* Lightweight and performance-focused architecture
+- A valid WordPress theme header and template hierarchy
+- Native theme supports, navigation locations, and enqueued assets
+- Admin-editable static homepage content
+- Dynamic latest-post cards powered by `WP_Query`
+- Pages, single posts, archives, featured images, and custom logos
+- Accessible mobile navigation and responsive desktop/tablet/mobile styling
+- Escaped output, translation-ready strings, and clean PHP organization
+- No plugins, page builders, or frontend frameworks
 
-## Technology Stack
+## Fast setup
 
-* WordPress
-* PHP
-* HTML5
-* CSS3
-* JavaScript
+1. Copy `hamees-working-theme-demo` into your WordPress installation at `wp-content/themes/`.
+2. Activate **Hamees Working Theme Demo** under **Appearance > Themes**.
+3. Create and publish a page with a title and several content blocks.
+4. Under **Settings > Reading**, choose **A static page** and assign that page as the Homepage.
+5. Create a menu and assign it to the **Primary Menu** location.
+6. Add three posts with featured images to populate the latest-posts section.
 
-## Theme Structure
+Detailed setup and demo-content guidance are in the [theme README](./hamees-working-theme-demo/README.md). The timed presentation is in [VIDEO_WALKTHROUGH_SCRIPT.md](./hamees-working-theme-demo/VIDEO_WALKTHROUGH_SCRIPT.md).
 
-* functions.php
-* style.css
-* front-page.php
-* page.php
-* single.php
-* archive.php
-* header.php
-* footer.php
-* index.php
+## Package for upload
 
-## Demonstrated WordPress Concepts
+From this repository in PowerShell:
 
-* Template Hierarchy
-* Theme Supports
-* Navigation Menus
-* Loop Implementation
-* Front Page Templates
-* Dynamic Content Rendering
-* Post Queries
-* Featured Images
-* Theme Customization
-* Responsive Design
+```powershell
+Compress-Archive -Path .\hamees-working-theme-demo -DestinationPath .\hamees-working-theme-demo.zip -Force
+```
 
-## Setup
-
-1. Clone the repository.
-2. Copy the theme folder into:
-
-wp-content/themes/
-
-3. Activate the theme from the WordPress Admin Dashboard.
-4. Create a homepage and assign it as the static front page.
-5. Create a navigation menu and assign it to the Primary Menu location.
-
-## Purpose
-
-This repository was created as a working demonstration project for WordPress theme development and technical review purposes. It showcases the ability to build, customize, and maintain WordPress themes using modern development practices while remaining lightweight and maintainable.
+Then upload the zip through **Appearance > Themes > Add New > Upload Theme**.
 
 ## Author
 
 Hamees Momin
-WordPress Developer | Full Stack Developer
-Dubai, UAE
